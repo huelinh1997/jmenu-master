@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JMenu Demos</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="jmenu.min.css">
+<style>
+body {
+  font: normal 1.125em/1.5 'Roboto', sans-serif;
+}
+  
+section {
+  margin-bottom: 50px;
+}
+  
+.tall {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 100px;
+}
+  
+@media (max-width: 768px) {
+  .tall {
+    height: 400px;
+  }
+}
+</style>
+</head>
+
+<body>
+  <h1>JMenu Demos</h1>
+  
+  <section class="tall">
+    <h3>Menu with Menu Button</h3>
+    <nav class="jmenu">
+      <label for="menu-btn" class="jm-menu-btn jm-icon-menu"></label>
+      <input type="checkbox" id="menu-btn" class="jm-menu-btn">
+      <ul class="jm-collapse">
+        <li><a href="javascript:void(0)">Home</a></li>
+        <li class="jm-dropdown">
+          <a href="javascript:void(0)">Categories</a>
+          <ul>
+            <li><a href="javascript:void(0)">Apples</a></li>
+            <li><a href="javascript:void(0)">Bananas and Pears</a></li>
+            <li><a href="javascript:void(0)">Oranges</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">About</a></li>
+        <li><a href="javascript:void(0)">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
+</body>
+</html>
